@@ -1,0 +1,286 @@
+.slc-wrap {
+	max-width: 1100px;
+	margin-top: 30px;
+}
+
+/* Header */
+
+.slc-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	padding: 32px;
+	margin-bottom: 24px;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.slc-header h1 {
+	margin: 0 0 8px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.slc-header p {
+	margin: 0;
+	font-size: 15px;
+	color: #64748b;
+}
+
+/* Score */
+
+.slc-score {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 120px;
+}
+
+.slc-score-number {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1;
+	color: #2271b1;
+}
+
+.slc-score-label {
+	margin-top: 8px;
+	font-size: 13px;
+	color: #64748b;
+}
+
+/* Summary */
+
+.slc-summary {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.slc-summary-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 18px 20px;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 10px;
+	font-size: 14px;
+}
+
+.slc-summary-number {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.slc-summary-pass .slc-summary-number {
+	color: #15803d;
+}
+
+.slc-summary-warning .slc-summary-number {
+	color: #b45309;
+}
+
+.slc-summary-fail .slc-summary-number {
+	color: #b91c1c;
+}
+
+/* Checks */
+
+.slc-checks {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.slc-check {
+	display: flex;
+	gap: 18px;
+	padding: 22px;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-left-width: 4px;
+	border-radius: 10px;
+}
+
+.slc-check-pass {
+	border-left-color: #16a34a;
+}
+
+.slc-check-warning {
+	border-left-color: #d97706;
+}
+
+.slc-check-fail {
+	border-left-color: #dc2626;
+}
+
+/* Check icon */
+
+.slc-check-icon {
+	display: flex;
+	align-items: flex-start;
+	padding-top: 2px;
+}
+
+.slc-check-icon .dashicons {
+	width: 24px;
+	height: 24px;
+	font-size: 24px;
+}
+
+.slc-check-pass .slc-check-icon {
+	color: #16a34a;
+}
+
+.slc-check-warning .slc-check-icon {
+	color: #d97706;
+}
+
+.slc-check-fail .slc-check-icon {
+	color: #dc2626;
+}
+
+/* Check content */
+
+.slc-check-content {
+	flex: 1;
+}
+
+.slc-check-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.slc-check-heading h2 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.slc-check-content p {
+	margin: 8px 0 0;
+	color: #64748b;
+}
+
+/* Status badges */
+
+.slc-status {
+	display: inline-flex;
+	align-items: center;
+	padding: 4px 9px;
+	border-radius: 20px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.slc-status-pass {
+	color: #166534;
+	background: #dcfce7;
+}
+
+.slc-status-warning {
+	color: #92400e;
+	background: #fef3c7;
+}
+
+.slc-status-fail {
+	color: #991b1b;
+	background: #fee2e2;
+}
+
+
+/* Filters */
+
+.slc-filters {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 20px;
+}
+
+.slc-filter {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	padding: 8px 14px;
+	background: #ffffff;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	color: #50575e;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.slc-filter:hover {
+	border-color: #2271b1;
+	color: #2271b1;
+}
+
+.slc-filter.active {
+	background: #2271b1;
+	border-color: #2271b1;
+	color: #ffffff;
+}
+
+.slc-filter span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 20px;
+	height: 20px;
+	padding: 0 5px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.08);
+	font-size: 11px;
+}
+
+.slc-filter.active span {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (max-width: 782px) {
+
+	.slc-header {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.slc-score {
+		align-items: flex-start;
+	}
+
+	.slc-summary {
+		grid-template-columns: 1fr;
+	}
+
+	.slc-check-heading {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+
