@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: '1.0.0'
 
       - name: Deploy plugin
         uses: 10up/action-wordpress-plugin-deploy@stable
@@ -17,3 +19,4 @@ jobs:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SLUG: sharmin-site-readiness-review
+          VERSION: '1.0.0'
